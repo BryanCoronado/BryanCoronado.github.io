@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio-coronado</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+        
+        <div id="particles-js"></div>
+        <!-- MENU ENCABEZADO gaaa -->
+        <div class="contenedor-header">
+            <header>
+                <div class="logo">
+                    <a href="#">mi portafolio</a>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                        <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                        <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                        <li><a href="#portfolio" onclick="seleccionar()">MIS PROYECTOS</a></li>
+                        <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </header>
+        </div>
+
+        <!-- SECCION INICIO -->
+        <section id="inicio" class="inicio">
+            <div class="contenido-banner">
+                <div class="contenedor-img">
+                    <img src="img/perfil.png" id="perfil" alt="">
+                </div>
+                <h1>BRYAN CORONADO</h1>
+                <h2>Ingeniero de Software/estudiante</h2>
+                <div class="redes">
+                    <a href="https://www.facebook.com/profile.php?id=100072381273626"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="http://wa.me/51901064562"><i class="fa-brands fa-whatsapp "></i></a>
+                    <a href="https://github.com/BryanCoronado"><i class="fa-brands fa-github "></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION SOBRE MI -->
+        <section id="sobremi" class="sobremi">
+            <div class="contenido-seccion">
+                <h2>Sobre Mí</h2>
+                <p><span>Hola, soy Bryan Coronado.</span> Estudiante de Ingeniería de Software apasionado por la programación y el desarrollo de software. Aunque aún no tengo experiencia profesional, he trabajado en proyectos de estudio  y personales que me han permitido desarrollar habilidades en el desarrollo de aplicaciones personalizadas. Me considero un aprendiz apasionado y un colaborador en equipo efectivo, y estoy buscando oportunidades para desarrollar mis habilidades y conocimientos en un entorno profesional.</p>
+
+                <div class="fila">
+                    <!-- datos personales -->
+                    <div class="col">
+                        <h3>Datos Personales</h3>
+                        <ul>
+                            <li>
+                                <strong>Cumpleaños</strong>
+                                13/03
+                            </li>
+                            <li>
+                                <strong>Teléfono</strong>
+                                (+51) 901064562
+                            </li>
+                            <li>
+                                <strong>Email</strong>
+                                smithelunico123gmail.com
+                            </li>
+
+                            <li>
+                                <strong>Dirección</strong>
+                                Puente Piedra-Lima ,Peru
+                            </li>
+                            <li>
+                                <strong>ocupacion</strong>
+                                <span>ESTUDIANTE</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- intereses -->
+                    <div class="col">
+                        <h3>Intereses</h3>
+                        <div class="contenedor-intereses">
+                            <div class="interes">
+                                <i class="fa-solid fa-gamepad"></i>
+                                <span>JUEGOS</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-headphones"></i>
+                                <span>MUSICA</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-book-reader"></i>
+                                <span>LEER</span>
+                            </div>
+                            
+                            <div class="interes">
+                                <i class="fa-solid fa-football"></i>
+                                <span>DEPORTE</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-book"></i>
+                                <span>LIBROS</span>
+                            </div>
+                        
+                            <div class="interes">
+                                <i class="fa-solid fa-laptop"></i>
+                                <span>LAPTOS</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--<button>
+                    Ver CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>-->
+            </div>
+        </section>
+
+        <!-- SECCION SKILLS -->
+        <section class="skills" id="skills">
+            <div class="contenido-seccion">
+                <h2>Skills</h2>
+                <div class="fila">
+                    <!-- Technical Skill -->
+                    <div class="col">
+                        <h3>   MIS DOMINIOS<br>  (aun estudiando)</h3>
+                        <div class="skill">
+                            <span>Javascript</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>50%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>HTML & CSS</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Python</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>45%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <span>java</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>30%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Professional Skills -->
+                    <div class="col">
+                        <h3>COMO ME DESARROLLO</h3>
+                        <div class="skill">
+                            <span>Comunicación</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Trabajo en Equipo</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>70%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Creatividad</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Dedicación</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>95%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--  PORTFOLIO -->
+        <section id="portfolio" class="portfolio">
+            <div class="contenido-seccion">
+                <h2>MIS PROYECTOS</h2>
+                <div class="galeria">
+                    
+                    <div class="proyecto">
+                        <a href="https://bryancoronado.github.io/gatitos_miau/">
+                            <img src="https://tse1.mm.bing.net/th?id=OIP.VHPkRI6R8VjjDURH33d6_wHaFj&pid=Api&P=0" alt="">
+                            <div class="overlay">
+                                <h3> LUPE MIAU</h3>
+                                <p>pagina web sobre gatitos </p>
+                            </div>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION CONTACTO -->
+        <section id="contacto" class="contacto">
+            <div class="contenido-seccion">
+                <h2>CONTACTAME</h2>
+                <div class="fila">
+                    <!-- Formulario -->
+                    <div class="col">
+                        <form action="https://formsubmit.co/smithelunico123@gmail.com" method="POST">
+                            <input type="text" name="Nombre" required placeholder="Tu Nombre">
+                            <input type="email" name="gmail" required placeholder="Tu Gmail">
+                            <input type="number" name="telefono" required placeholder="Tu telefono">
+                            <input type="text" name="Tema" required placeholder="Tema">
+                            <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+
+                            <button type="submit">
+                                Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                                <span class="overlay"></span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <br><br><br><br>
+
+
+                    <!-- Mapa -->
+                    <div class="col">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Puente Piedra, Lima-Peru
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                    Llamame:<br> ( +51 ) 9901064562
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    Email: smithelunico123@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br><br><br>
+
+
+                </div>
+            </div>
+        </section>
+        
+
+
+        <!-- pie de pagina -->
+        <footer>
+            <a href="#inicio" class="arriba">
+                <i class="fa-solid fa-angles-up"></i>
+            </a>
+            
+                <div class="redes">
+                    <a href="https://www.facebook.com/profile.php?id=100072381273626"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="http://wa.me/51901064562"><i class="fa-brands fa-whatsapp "></i></a>
+                    <a href="https://github.com/BryanCoronado"><i class="fa-brands fa-github "></i></a>
+                </div>
+            
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="particles.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
